@@ -1,0 +1,2 @@
+# Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-Maxwell-Boltzmann-like-model
+Analysis of time series datasets of recorded cases and deaths from COVID-19 and cases and deaths from SARS (severe acute respiratory syndrome) in Brazil using Differential Evolution and a combination model of "Maxwell-Boltzmann-like" distributions to forecast the behavior of the first and second wave of COVID-19 in Brazil. 
