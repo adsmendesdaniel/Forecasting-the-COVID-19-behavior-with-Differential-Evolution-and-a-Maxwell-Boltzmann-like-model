@@ -18,7 +18,7 @@
  <img src="eqs_png/eq_max_bol.png" align=middle/>
  </p>
  
- Dependendo dos parâmetros escolhido massa *m* e temperatura *T*, a função pode esboçar uma clara distruibuição assimétrica (se comparada com uma distruibuição de Gauss) que pode ser capaz de ajustar os dados provenientes da pandemia de COVID-19 no Brasil se associada a um conveniente algoritmo de otimização, já que a distruibuição é capaz de esboçar uma subida abrupta e um comportamento de cauda. 
+ Dependendo dos parâmetros escolhidos, massa *m* e temperatura *T*, a função pode esboçar uma clara distruibuição assimétrica (se comparada com uma distruibuição de Gauss) que pode ser capaz de ajustar os dados provenientes da pandemia de COVID-19 no Brasil se associada a um conveniente algoritmo de otimização, já que a distruibuição é capaz de esboçar uma subida abrupta e um comportamento de cauda. 
  
  Assim, foi contruído o seguinte modelo:
 
