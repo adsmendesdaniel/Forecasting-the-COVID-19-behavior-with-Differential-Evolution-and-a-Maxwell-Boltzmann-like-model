@@ -105,13 +105,13 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  Ajuste atualizado em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_05_03_2021/obitos_srag_ajuste_03_03_2021.png" align=middle/>
+ <img src="obitos_srag_ajuste_05_03_2021.png" align=middle/>
  </p>
 
  Previsão dos próximos dias epidemiológicos atualizada em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_03_03_2021/obitos_srag_previsao_05_03_2021.png" align=middle/>
+ <img src="obitos_srag_previsao_05_03_2021.png" align=middle/>
  </p>
 
  O modelo novo foi 17.81% melhor que o antigo (considerando o erro RSME), neste caso.
