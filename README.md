@@ -164,7 +164,7 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
   
   Talvez. Provavelmente não. As causas geradoras dos pontos contidos nos *datasets* geram algo próximo de uma Distruibuição de Gauss em alguns casos (casos e óbitos registrados por COVID-19), porém, nos dados de SRAG temos uma assimetria desta "curva de distruibuição de probabilidade". O modelo novo (que eu apelidei de "tipo Maxwell-Boltzmann"), por possuir assimetria na curva de distruibuição, consegue ajustar os pontos melhor que o modelo antigo (que eu apelidei de "Gaussiano combinado"), já que o modelo novo consegue lidar melhor com esta assimetria gerada pela "explosão" incial de casos e em seu comportamento de cauda ao demorar para decrescer mais do que aumentar. Mas este melhor ajuste dos parâmetros do modelo não é garantia de que consígamos fazer boas previsões. Apesar do erro menor que o proveniente do RSME anterior, não há garantia de que esta metodologia consiga prever com exatidão o comportamento da pandemia no futuro apenas por conseguir ajustar os dados, para isto, existem metologias melhores (e bem diferentes) que são aplicadas em estudos epidemiológicos mais precisos. 
   
-  Apesar disto, é possível melhorar ainda mais os resultados se criarmos modelos que utilizem curvas de distribuição de probabilidade que possibilite assimetria bem maior, como Distruibuição Gama ou Distribuição Gama Invertida.
+  Apesar disto, é possível melhorar ainda mais os resultados se criarmos modelos que utilizem curvas de distribuição de probabilidade que possibilitem assimetria bem maior, como Distruibuição Gama ou Distribuição Gama Invertida.
   
   No final das contas este não passa, pelo menos na intenção, de ser um exercício de otimização.
 
