@@ -40,162 +40,136 @@
  
 ## Testando o modelo tipo Maxwell-Boltzmann:
 
+*Obs: Este repositório é uma sucessão do trabalho no repositório: https://github.com/adsmendesdaniel/Forecasting-the-COVID-19-behavior-with-Differential-Evolution-and-a-combination-of-gaussians-model, onde testei um outro modelo para ajustar estes mesmo dados.*
 
-E encontrar os parâmeros que melhor ajustam a curva do modelo aos devidos dados utilizando Evolução Diferencial como algoritmo de otimização.
+Podemos testar o novo modelo encontrando os parâmeros que melhor ajustam a curva gerada pela função aos devidos dados utilizando Evolução Diferencial como algoritmo de otimização, e compara-lo com resultados obtidos por outro modelo. Neste caso, usaremos dados de óbitos por SRAG no Brasil:
 
+ <p align="center">
+ <img src="model_test_plot.png" align=middle/>
+ </p>
+
+O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o modelo anterior ("Gaussiano combinado").
 
 ## Ajustando casos de COVID-19:
  
- Ajuste feito em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
+ Ajuste feito em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 5 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="casos_covid_ajuste.png" align=middle/>
+ <img src="casos_covid_ajuste_05_03_2021.png" align=middle/>
  </p>
  
- 
- Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 5 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_03_03_2021/casos_covid_ajuste_03_03_2021.png" align=middle/>
+ <img src="casos_covid_previsao_05_03_2021.png" align=middle/>
  </p>
- 
- Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="casos_covid_previsao.png" align=middle/>
- </p>
- 
- Previsão dos próximos dias epidemiológicos atualizada em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="update_03_03_2021/casos_covid_previsao_03_03_2021.png" align=middle/>
- </p>
+
+ O modelo novo foi 0.16% melhor que o antigo (considerando o erro RSME), neste caso.
 
 ## Ajustando óbitos por COVID-19:
 
- Ajuste feito em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste feito em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 20 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="obitos_covid_ajuste.png" align=middle/>
+ <img src="obitos_covid_ajuste_05_03_2021.png" align=middle/>
  </p>
  
- Ajuste atualizado em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
+ Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 20 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_03_03_2021/obitos_covid_ajuste_03_03_2021.png" align=middle/>
+ <img src="obitos_covid_previsao_05_03_2021.png" align=middle/>
  </p>
- 
- Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="obitos_covid_previsao.png" align=middle/>
- </p>
- 
- Previsão dos próximos dias epidemiológicos atualizada em 03/01/2021 (Média dos parâmetros de 20 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="update_03_03_2021/obitos_covid_previsao_03_03_2021.png" align=middle/>
- </p>
+
+ O modelo novo foi 1.99% melhor que o antigo (considerando o erro RSME), neste caso.
 
 ## Ajustando casos de SRAG:
 
  Uma forma de tentarmos prever o comportamento da segunda onda de COVID-19 é analisando os casos e óbitos por Síndrome Respiratória Aguda Grave, já que devido à subnotificação de casos e mortes no Brasil, é possível tentar estimar, por exemplo, óbitos subnotificados por COVID-19 através da análise dos dados de SRAG.
 
- Ajuste feito em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
-
- <p align="center">
- <img src="casos_srag_ajuste.png" align=middle/>
- </p>
- 
- Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
-
- <p align="center">
- <img src="update_03_03_2021/casos_srag_ajuste_03_03_2021.png" align=middle/>
- </p>
- 
- Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Ajuste feito em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="casos_srag_previsao.png" align=middle/>
+ <img src="casos_srag_ajuste_05_03_2021.png" align=middle/>
  </p>
  
- Previsão dos próximos dias epidemiológicos atualizado em 03/03/2021 (Média dos parâmetros de 10 runs do algoritmo de ED):
+ Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_03_03_2021/casos_srag_previsao_03_03_2021.png" align=middle/>
+ <img src="casos_srag_previsao_05_03_2021.png" align=middle/>
  </p>
+ 
+ O modelo novo foi 15.10% melhor que o antigo (considerando o erro RSME), neste caso.
 
 ## Ajustando óbitos por SRAG:
  
- Ajuste feito em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
+ Ajuste atualizado em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="obitos_srag_ajuste.png" align=middle/>
- </p>
- 
- Ajuste atualizado em 03/03/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="update_03_03_2021/obitos_srag_ajuste_03_03_2021.png" align=middle/>
- </p>
- 
- Previsão dos próximos dias epidemiológicos feita em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
- 
- <p align="center">
- <img src="obitos_srag_previsao.png" align=middle/>
+ <img src="update_05_03_2021/obitos_srag_ajuste_03_03_2021.png" align=middle/>
  </p>
 
- Previsão dos próximos dias epidemiológicos atualizada em 03/01/2021 (Média dos parâmetros de 5 runs do algoritmo de ED):
+ Previsão dos próximos dias epidemiológicos atualizada em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
- <img src="update_03_03_2021/obitos_srag_previsao_03_03_2021.png" align=middle/>
+ <img src="update_03_03_2021/obitos_srag_previsao_05_03_2021.png" align=middle/>
  </p>
 
-## Prevendo o pior momento da segunda onda de COVID-19 no Brasil:
+ O modelo novo foi 17.81% melhor que o antigo (considerando o erro RSME), neste caso.
+
+## Estimativas a partir dos parametros obtidos do modelo ajustado aos dados:
  
- Para tentarmos visualizar o comportamento do auge da segunda onda de COVID-19 no Brasil podemos plotar as curvas correspondentes às gaussianas combinadas dos ajustes anteriores de forma normalizada:
+ Para tentarmos visualizar o comportamento da segunda onda de COVID-19 no Brasil podemos plotar as curvas correspondentes aos ajustes feitos com o modelo tipo Maxwell-Boltzmann utilizando os parametros obtidos pelo processo de otimização com Evolução Diferencial, e com estas curvas, fazer estimativas baseadas em nosso modelo:
 
- Normalizações feitas em 03/01/2021:
-
- <p align="center">
- <img src="normalizacoes.png" align=middle/>
- </p>
-  
-  Normalizações atualizadas em 03/03/2021:
+ Normalizações feitas em 05/03/2021:
 
  <p align="center">
- <img src="update_03_03_2021/normalizacoes_03_03_2021.png" align=middle/>
+ <img src="normalizacoes_05_03_2021.png" align=middle/>
  </p>
   
-  Em nosso modelo, o parâmetro &beta;<sub>i</sub> representa o centro do máximo de cada curva gaussiana, assim, podemos ver que, segundo nossa estimativa:
+ Com estas curvas podemos obter o ponto máximo da segunda onda de cada um dos conjuntos de pontos e fazer as seguintes estimativas:
   
-  Estimativas feitas em 03/01/2021:
+ (Estimativas feitas em 05/03/2021)
   
-  - 13 de abril (aproximadamente) será o dia com mais casos de COVID-19 registrados na segunda onda;
-  - 12 de julho (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
-  - 20 de março (aproximadamente) será o dia com mais casos de SRAG registrados na segunda onda;
-  - 20 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
-  - Em média, 9 de maio (aproximadamente) será o "pior dia" da segunda onda, considerando todos os fatores anteriores.
+  - 9 de fevereiro (aproximadamente) foi o dia com mais casos de COVID-19 na segunda onda;
+  - 27 de março (aproximadamente) será o dia com mais óbitos por COVID-19 na segunda onda;
+  - 30 de janeiro (aproximadamente) foi o dia com mais casos de SRAG na segunda onda;
+  - 6 de fevereiro (aproximadamente) foi o dia com mais óbitos por SRAG na segunda onda;
+  - Em média, 17 de fevereiro (aproximadamente) foi o "pior dia" da segunda onda, considerando todos os fatores anteriores.
   
+  *OBS: Considerando 1 de janeiro de 2020 como o primeiro dia epidemiológico do Brasil*
   
-  Estimativas atualizadas em 03/03/2021:
+ Com estas curvas podemos obter o ponto onde há intersecção com o eixo dos dias e fazer as seguintes estimativas:
   
-  - 17 de fevereiro (aproximadamente) foi o dia com mais casos de COVID-19 registrados na segunda onda;
-  - 19 de maio (aproximadamente) será o dia com mais óbitos por COVID-19 registrados na segunda onda;
-  - 27 de abril (aproximadamente) será o dia com mais casos de SRAG registrados na segunda onda;
-  - 22 de maio (aproximadamente) será o dia com mais óbitos por SRAG registrados na segunda onda;
-  - Em média, 22 de abril (aproximadamente) será o "pior dia" da segunda onda, considerando todos os fatores anteriores.
+ (Estimativas feitas em 05/03/2021)
   
-  *OBS: Considerando 13 de março de 2020 como o primeiro dia epidemiológico do Brasil*
+  - Em 17 de março de 2022 (aproximadamente) não haverá mais casos de COVID-19 provenientes da segunda onda;
+  - Em 17 de maio de 2022 (aproximadamente) não haverá mais óbitos por COVID-19 provenientes da segunda onda;
+  - Em 26 de maio de 2022 (aproximadamente) não haverá mais casos de SRAG provenientes da segunda onda;
+  - Em 31 de agosto de 2022 (aproximadamente) não haverá mais óbitos por SRAG provenientes da segunda onda;
+  - Em média, em 31 de maio de 2022 (aproximadamente) não haverá mais contruibuição da segunda onda em uma possível ainda decorrente pandemia, considerando todos os fatores anteriores.
+  
+  *OBS: Considerando 1 de janeiro de 2020 como o primeiro dia epidemiológico do Brasil*
+  
+ Com os ajustes feitos utilizando o novo modelo podemos realizar o somatório dos pontos até a intersecção de suas curvas com o eixo dos dias (ou fazer uma integral numérica) e obter as seguintes estimativas:
+ 
+  - Teremos (aproximadamente) 14535182.3 casos (registrados) de COVID-19 até o fim da segunda onda.
+  - Teremos (aproximadamente) 445803.6 mortes (registradas) por COVID-19 até o fim da segunda onda.
+  - Teremos (aproximadamente) 1818003.9 casos de SRAG até o fim da segunda onda.
+  - Teremos (aproximadamente) 490703.1 mortes por SRAG até o fim da segunda onda.
+  - A taxa de subnotificação de mortes por COVID-19 (aproximadamente) até o fim da segunda onda será: 9.15%
+
+  *OBS: Taxa de subnotificação de óbitos calculada sem subtrairmos os casos anuais de mortes por SRAG esperados por ano. O que eu calculo esporadicamente com precisão em outro repositório: https://github.com/Gremling-Machine-Learning-Study-Group/Estimativa-de-mortes-por-COVID-19-subnotificadas-no-Brasil---D051---HACKCOVID-19.*
   
   ## Estas são boas previsões acerca da segunda onda de COVID-19 no Brasil?
   
-  Não. O Teorema Central do Limite nos garante que a distribuição amostral, quando a amostra aumenta, se aproxima de uma distribuição normal, ou, distruibuição gaussiana. Dada a evolução dos pontos da série temporal proveniente dos dados gerados por fenômenos antropológicos e biológicos relacionados ao COVID-19, pode-se pensar que uma curva gaussina poderia ajustar muito bem estes pontos. Porém,  as variáveis do fenômeno que geram os respectivos dados não são independentes, desta forma, não podem ser aproximados facilmente por este tipo de função. Necessitaríamos de algo um pouco mais sofisticado, como uma gaussiana modificada, o que faria, por exemplo, que a curva ajustasse os pontos iniciais de nossos datasets, o que claramente não acontece em nosso casos, e pode ser visualizado nos gráficos.
+  Talvez. Provavelmente não. As causas geradoras dos pontos contidos nos *datasets* geram algo próximo de uma Distruibuição de Gauss em alguns casos (casos e óbitos registrados por COVID-19), porém, nos dados de SRAG temos uma assimetria desta "curva de distruibuição de probabilidade". O modelo novo (que eu apelidei de "tipo Maxwell-Boltzmann"), por possuir assimetria na curva de distruibuição, consegue ajustar os pontos melhor que o modelo antigo (que eu apelidei de "Gaussiano combinado"), já que o modelo novo consegue lidar melhor com esta assimetria gerada pela "explosão" incial de casos e em seu comportamento de cauda ao demorar para decrescer mais do que aumentar. Mas este melhor ajuste dos parâmetros do modelo não é garantia de que consígamos fazer boas previsões. Apesar do erro menor que o proveniente do RSME anterior, não há garantia de que esta metodologia consiga prever com exatidão o comportamento da pandemia no futuro apenas por conseguir ajustar os dados, para isto, existem metologias melhores (e bem diferentes) que são aplicadas em estudos epidemiológicos mais precisos. 
   
-  Outro aspecto a se atentar, é que talvez não tenhamos dados o suficiente da segunda onda para inferirmos um comportamento à longo prazo, principalmente nas previsões utilizando dados de SRAG, que parecem estar desatualizados e/ou subnotificados nos datasets investigados.
+  Apesar disto, é possível melhorar ainda mais os resultados se criarmos modelos que utilizem curvas de distribuição de probabilidade que possibilite assimetria bem maior, como Distruibuição Gama ou Distribuição Gama Invertida.
   
+  No final das contas este não passa, pelo menos na intenção, de ser um exercício de otimização.
+
 ## Referências:
 
-* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 03/01/2021 nos primeiros ajustes e 03/03/2021 nos ajustes maisrecentes) (Daqui foram obtidos os *datasets* utilizados.
+* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 05/01/2021) (Daqui foram obtidos os *datasets* utilizados.
 
 * **"InfoGripe"** http://info.gripe.fiocruz.br/; (Visualizado em: 16/05/2020) (Onde os dados são divulgados originalmente. Daqui é possível obter *datasets* mais robustos com registros até o ano de 2009).
