@@ -1,20 +1,48 @@
 # Prevendo o comportamento da COVID-19 com Evolução Diferencial e um modelo tipo Maxwell-Boltzmann
 
-  *Analysis of time series datasets of recorded cases and deaths from COVID-19 and cases and deaths from SARS (severe acute respiratory syndrome) using Differential Evolution and the combination of Gaussian wave packets to forecast the behavior of the second wave of COVID-19 in Brazil. *
+  *Analysis of time series datasets of recorded cases and deaths from COVID-19 and recorded cases and deaths from SARS (severe acute respiratory syndrome) in Brazil using Differential Evolution and a combination model of "Maxwell-Boltzmann-like" distributions to forecast the behavior of the first and second wave of COVID-19 in Brazil.*
 
-  Análise de datasets contendo séries temporais de casos e óbitos registrados de Covid-19 e casos e óbitos por SRAG (síndrome respiratória aguda grave) utilizando Evolução Diferencial e combinação de pacotes de onda gaussianos na previsão do comportamento da segunda onda de COVID-19 no Brasil.
+  Análise de datasets contendo séries temporais de casos e óbitos por COVID-10 registrados e casos e óbitos por SRAG (síndrome respiratória aguda grave) no Brazil utilizando Evolução Diferencial e um modelo combinatório de distribuições tipo Maxwell-Boltzmann para prever o comportamento da primeira e segunda onda de COVID-19 no Brazil.
 
-## Sobre ED, Gaussianas e COVID-19:
+ 
+
+## Sobre ED, Distribuição de Maxwell-Boltzmann e COVID-19:
 
  Evolução Diferencial é um algorítmo evolutivo simples da categoria de algorítmos meta-heurísticos, que através da criação de populações de soluções, suas seleções e recombinações, é capaz de obter um solução ótima ou aproximadamente ótima para um problema.
  
- Desde que tenhamos dados o suficiente, é possível, facilmente, utilizar Evolução Diferencial para ajustar curvas/séries temporais provenientes de fenômenos físicos, por exemplo. Assim, podemos ajustar curvas geradas por fenômenos antropológicos como os relacionados ao COVID-19, desde que escolhamos um modelo matemáticos conveniente, que possa ser ajustado aos dados.
+ Desde que tenhamos dados o suficiente é possível, facilmente, utilizar Evolução Diferencial (Autoadaptativa ou não) para ajustar curvas/séries temporais provenientes de fenômenos físicos, por exemplo. Assim, podemos ajustar curvas geradas por fenômenos antropológicos como os relacionados ao COVID-19, desde que escolhamos um modelo matemáticos conveniente, que possa ser ajustado aos dados.
 
- Pelo Teorema do Central do Limite, podemos encontrar que utilizar uma função de distribuição Gaussiana pode aproximar a solução de nosso problema já que variáveis aleatórias independentes podem estar gerando nosso conjunto de dados (na verdade, estas variáveis no caso da análise de dados de COVID-19 são tão independentes assim, logo, o ideal seria utlizar alguma função de distruibuição correspondente à uma Gaussiana Modificada). Apesar de não ser a melhor opção neste caso, podemos utilizar a sobreposição de dois pacotes gaussianos como função objetiva na solução de nosso problema de otimização com Evolução Diferencial. Assim, simplificadamente, podemos escrever:
+ A equação de densidade de frequência relativa (distribuição de velocidades de Maxwell-Boltzmann) é um modelo matemático utilizado para determinar a distruibuição de velocidades de moléculas contidas em um gás ideal:
  
- *f(&alpha;<sub>1</sub>, &beta;<sub>1</sub>, &gamma;<sub>1</sub>, &alpha;<sub>2</sub>, &beta;<sub>2</sub>, &gamma;<sub>2</sub>) = &alpha;<sub>1</sub>exp[-(x-&beta;<sub>1</sub>)^2/2&gamma;<sub>1</sub>^2] + &alpha;<sub>2</sub>exp[-(x-&beta;<sub>2</sub>)^2/2&gamma;<sub>2</sub>^2]*
+ <p align="center">
+ <img src="eqs_png/eq_max_bol.png" align=middle/>
+ </p>
+ 
+ Dependendo dos parâmetros escolhido massa *m* e temperatura *T*, a função pode esboçar uma clara distruibuição assimétrica (se comparada com uma distruibuição de Gauss) que pode ser capaz de ajustar os dados provenientes da pandemia de COVID-19 no Brasil se associada a um conveniente algoritmo de otimização, já que a distruibuição é capaz de esboçar uma subida abrupta e um comportamento de cauda. 
+ 
+ Assim, foi contruído o seguinte modelo:
 
- E encontrar os parâmeros que melhor ajustam a curva do modelo aos devidos dados utilizando Evolução Diferencial como algoritmo de otimização.
+ <p align="center">
+ <img src="eqs_png/eq_waves.png" align=middle/>
+ </p>
+ 
+ Onde:
+ 
+ <p align="center">
+ <img src="eqs_png/eq_wave_1.png" align=middle/>
+ </p>
+ 
+ e
+ 
+ <p align="center">
+ <img src="eqs_png/eq_wave_2.png" align=middle/>
+ </p>
+ 
+## Testando o modelo tipo Maxwell-Boltzmann:
+
+
+E encontrar os parâmeros que melhor ajustam a curva do modelo aos devidos dados utilizando Evolução Diferencial como algoritmo de otimização.
+
 
 ## Ajustando casos de COVID-19:
  
