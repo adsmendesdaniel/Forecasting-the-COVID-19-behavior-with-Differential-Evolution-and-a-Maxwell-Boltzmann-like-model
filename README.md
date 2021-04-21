@@ -180,15 +180,23 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <img src="plots_21_04_2021/normalizacoes_21_04_2021.png" align=middle/>
  </p>
  
- Com estas curvas podemos obter o ponto máximo da segunda onda de cada um dos conjuntos de pontos e fazer as seguintes estimativas:
+ Com estas curvas podemos obter o ponto máximo da última (terceira) onda de cada um dos conjuntos de pontos e fazer as seguintes estimativas:
   
- (Estimativas feitas em 05/03/2021)
+ (Estimativas feitas em 05/03/2021 referentes à segunda onda)
   
   - 9 de fevereiro (aproximadamente) foi o dia com mais casos de COVID-19 na segunda onda;
-  - 27 de março (aproximadamente) será o dia com mais óbitos por COVID-19 na segunda onda;
+  - 1 de abril (aproximadamente) foi o dia com mais óbitos por COVID-19 na segunda onda;
   - 30 de janeiro (aproximadamente) foi o dia com mais casos de SRAG na segunda onda;
   - 6 de fevereiro (aproximadamente) foi o dia com mais óbitos por SRAG na segunda onda;
   - Em média, 17 de fevereiro (aproximadamente) foi o "pior dia" da segunda onda, considerando todos os fatores anteriores.
+  
+ **(Estimativas feitas em 21/04/2021)**
+  
+  - 28 de março (aproximadamente) foi o dia com mais casos de COVID-19 na terceira onda;
+  - 27 de março (aproximadamente) foi o dia com mais óbitos por COVID-19 na terceira onda;
+  - 18 de março (aproximadamente) foi o dia com mais casos de SRAG na terceira onda;
+  - 10 de março (aproximadamente) foi o dia com mais óbitos por SRAG na terceira onda;
+  - Em média, 25 de março (aproximadamente) foi o "pior dia" da terceira onda, considerando todos os fatores anteriores.
   
   *OBS: Considerando 1 de janeiro de 2020 como o primeiro dia epidemiológico do Brasil*
   
@@ -202,15 +210,33 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
   - Em 31 de agosto de 2022 (aproximadamente) não haverá mais óbitos por SRAG provenientes da segunda onda;
   - Em média, em 31 de maio de 2022 (aproximadamente) não haverá mais contruibuição da segunda onda em uma possível ainda decorrente pandemia, considerando todos os fatores anteriores.
   
+ **(Estimativas feitas em 21/04/2021)**
+  
+  - Em 29 de dezembro de 2021 (aproximadamente) não haverá mais casos de COVID-19 provenientes da terceira onda;
+  - Em 12 de julho de 2022 (aproximadamente) não haverá mais óbitos por COVID-19 provenientes da terceira onda;
+  - Em 17 de março de 2022 (aproximadamente) não haverá mais casos de SRAG provenientes da terceira onda;
+  - Em 10 de novembro de 2021 (aproximadamente) não haverá mais óbitos por SRAG provenientes da terceira onda;
+  - Em média, em 23 de fevereiro de 2022 (aproximadamente) não haverá mais contruibuição da terceira onda em uma possível ainda decorrente pandemia, considerando todos os fatores anteriores.
+  
   *OBS: Considerando 1 de janeiro de 2020 como o primeiro dia epidemiológico do Brasil*
   
  Com os ajustes feitos utilizando o novo modelo podemos realizar o somatório dos pontos até a intersecção de suas curvas com o eixo dos dias (ou fazer uma integral numérica) e obter as seguintes estimativas:
+ 
+ (Estimativas feitas em 05/03/2021)
  
   - Teremos (aproximadamente) 14535182.3 casos (registrados) de COVID-19 até o fim da segunda onda.
   - Teremos (aproximadamente) 445803.6 mortes (registradas) por COVID-19 até o fim da segunda onda.
   - Teremos (aproximadamente) 1818003.9 casos de SRAG até o fim da segunda onda.
   - Teremos (aproximadamente) 490703.1 mortes por SRAG até o fim da segunda onda.
   - A taxa de subnotificação de mortes por COVID-19 (aproximadamente) até o fim da segunda onda será: 9.15%
+
+ **(Estimativas feitas em 21/04/2021)**
+ 
+  - Teremos (aproximadamente) 15794743.6 casos (registrados) de COVID-19 até o fim da segunda onda.
+  - Teremos (aproximadamente) 577774.2 mortes (registradas) por COVID-19 até o fim da segunda onda.
+  - Teremos (aproximadamente) 2005719.5 casos de SRAG até o fim da segunda onda.
+  - Teremos (aproximadamente) 478295.7 mortes por SRAG até o fim da segunda onda.
+  - A taxa de subnotificação de mortes por COVID-19 (aproximadamente) até o fim da segunda onda será: -20.80% (O resultado do calculo é imcompatível com o esperado já que o ajuste nos entregou um número menor de óbitos por SRAG do que óbitos por COVID-19, logo, precisaremos de mais dados para obter uma estimativa realista)
 
   *OBS: Taxa de subnotificação de óbitos calculada sem subtrairmos os casos anuais de mortes por SRAG esperados por ano. O que eu calculo esporadicamente com precisão em outro repositório: https://github.com/Gremling-Machine-Learning-Study-Group/Estimativa-de-mortes-por-COVID-19-subnotificadas-no-Brasil---D051---HACKCOVID-19.*
   
@@ -224,6 +250,6 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
 
 ## Referências:
 
-* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 05/01/2021) (Daqui foram obtidos os *datasets* utilizados.
+* **"MonitoraCovid-19"** https://bigdata-covid19.icict.fiocruz.br/; (Visualizado em: 21/04/2021) (Daqui foram obtidos os *datasets* utilizados.
 
 * **"InfoGripe"** http://info.gripe.fiocruz.br/; (Visualizado em: 16/05/2020) (Onde os dados são divulgados originalmente. Daqui é possível obter *datasets* mais robustos com registros até o ano de 2009).
