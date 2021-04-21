@@ -4,7 +4,7 @@
 
   Análise de datasets contendo séries temporais de casos e óbitos por COVID-10 registrados e casos e óbitos por SRAG (síndrome respiratória aguda grave) no Brazil utilizando Evolução Diferencial e um modelo combinatório de distribuições tipo Maxwell-Boltzmann para prever o comportamento da primeira e segunda onda de COVID-19 no Brazil.
 
- 
+ **Última atualização: 21/04/2021**
 
 ## Sobre ED, Distribuição de Maxwell-Boltzmann e COVID-19:
 
@@ -58,10 +58,22 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <img src="casos_covid_ajuste_05_03_2021.png" align=middle/>
  </p>
  
+ **Gráfico atualizado em 21/04/2021:**
+ 
+ <p align="center">
+ <img src="plots_21_04_2021/casos_covid_ajuste_21_04_2021.png" align=middle/>
+ </p>
+ 
  Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 5 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
  <img src="casos_covid_previsao_05_03_2021.png" align=middle/>
+ </p>
+
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/casos_covid_previsao_21_04_2021.png" align=middle/>
  </p>
 
  O modelo novo foi 0.16% melhor que o antigo (considerando o erro RSME), neste caso.
@@ -74,10 +86,22 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <img src="obitos_covid_ajuste_05_03_2021.png" align=middle/>
  </p>
  
+ **Gráfico atualizado em 21/04/2021:**
+ 
+ <p align="center">
+ <img src="plots_21_04_2021/obitos_covid_ajuste_21_04_2021.png" align=middle/>
+ </p>
+ 
  Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 20 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
  <img src="obitos_covid_previsao_05_03_2021.png" align=middle/>
+ </p>
+
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/obitos_covid_previsao_21_04_2021.png" align=middle/>
  </p>
 
  O modelo novo foi 1.99% melhor que o antigo (considerando o erro RSME), neste caso.
@@ -91,11 +115,23 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <p align="center">
  <img src="casos_srag_ajuste_05_03_2021.png" align=middle/>
  </p>
+
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/casos_srag_ajuste_21_04_2021.png" align=middle/>
+ </p>
  
  Previsão dos próximos dias epidemiológicos feita em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
  <img src="casos_srag_previsao_05_03_2021.png" align=middle/>
+ </p>
+
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/casos_srag_previsao_21_04_2021.png" align=middle/>
  </p>
  
  O modelo novo foi 15.10% melhor que o antigo (considerando o erro RSME), neste caso.
@@ -108,12 +144,24 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <img src="obitos_srag_ajuste_05_03_2021.png" align=middle/>
  </p>
 
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/obitos_srag_ajuste_21_04_2021.png" align=middle/>
+ </p>
+
  Previsão dos próximos dias epidemiológicos atualizada em 05/03/2021 (Melhor de 10 "runs" do algoritmo de ED para o modelo Gaussiano combinado e melhor de 10 runs para o tipo Maxwell-Boltzmann):
  
  <p align="center">
  <img src="obitos_srag_previsao_05_03_2021.png" align=middle/>
  </p>
 
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/obitos_srag_previsao_21_04_2021.png" align=middle/>
+ </p>
+ 
  O modelo novo foi 17.81% melhor que o antigo (considerando o erro RSME), neste caso.
 
 ## Estimativas a partir dos parametros obtidos do modelo ajustado aos dados:
@@ -125,7 +173,13 @@ O novo modelo (tipo Maxwell-Boltzmann) gerou um erro (RSME) 28.13% menor que o m
  <p align="center">
  <img src="normalizacoes_05_03_2021.png" align=middle/>
  </p>
-  
+
+ **Gráfico atualizado em 21/04/2021:**
+
+ <p align="center">
+ <img src="plots_21_04_2021/normalizacoes_21_04_2021.png" align=middle/>
+ </p>
+ 
  Com estas curvas podemos obter o ponto máximo da segunda onda de cada um dos conjuntos de pontos e fazer as seguintes estimativas:
   
  (Estimativas feitas em 05/03/2021)
